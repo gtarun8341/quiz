@@ -13,7 +13,7 @@ const rzp = new Razorpay({
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
-app.get('/generatePaymentLink', async (req, res) => {
+app.get('/', async (req, res) => {
     return res.send('hi');
 });
 // Route to generate payment link
